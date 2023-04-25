@@ -18,10 +18,11 @@ html {
 .my-imgs {
   height: 25rem;
   width: 25rem;
-}
-
-.shadow-me {
-  box-shadow: 5px 2rem 3rem rgba(0, 0, 0, 0.492);
+  background: linear-gradient(
+    rgba(128, 0, 128, 0.704),
+    rgba(255, 166, 0, 0.644)
+  );
+  box-shadow: 5px 2rem 3rem rgba(55, 55, 55, 0.492);
 }
 
 a:hover {
@@ -141,7 +142,7 @@ a:hover {
 
 .skills {
   min-height: 40rem;
-  background-color: #171717;
+  background-color: #171717af;
   padding-top: 5rem;
 }
 
@@ -194,7 +195,7 @@ a:hover {
 /* cert-sec */
 
 .cert-sec {
-  height: 49rem;
+  height: 40rem;
   width: 100%;
   background-color: #141111;
 }
@@ -258,4 +259,24 @@ a:hover {
 
 .cert-title {
   font-size: 1.1rem;
+}
+
+.star {
+  background: url("./stars.gif");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* projects */
+
+.Projects {
+  min-height: 30rem;
+  background-color: #0b1b1d;
+  padding-top: 5rem;
 }

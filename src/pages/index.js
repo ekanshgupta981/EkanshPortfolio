@@ -90,7 +90,7 @@ export default function Home() {
               <img
                 src="./images/me2.png"
                 alt=""
-                className="my-imgs img-fluid position-absolute bg-danger rounded-circle p-2 shadow-me"
+                className="my-imgs img-fluid position-absolute rounded-circle p-1"
               />
             </div>
           </section>
@@ -252,9 +252,9 @@ export default function Home() {
             showDots={true}
             swipeable={true}
             className="py-5
-            ps-lg-3 ps-1"
+            ps-lg-3 ps-1 col-12"
           >
-            <div className="certificates-img ">
+            <div className="certificates-img py-2">
               <div className="certificates h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
                   <div className="card-sec">
@@ -285,7 +285,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="certificates-img ">
+            <div className="certificates-img img-fluid ">
               <div className="certificates-rct h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
                   <div className="card-sec">
@@ -316,7 +316,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="certificates-img ">
+            <div className="certificates-img img-fluid ">
               <div className="certificates-JS h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
                   <div className="card-sec">
@@ -344,7 +344,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="certificates-img ">
+            <div className="certificates-img img-fluid ">
               <div className="certificates-mern h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
                   <div className="card-sec">
@@ -376,7 +376,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="certificates-img ">
+            <div className="certificates-img img-fluid ">
               <div className="certificates-html h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
                   <div className="card-sec">
@@ -409,6 +409,16 @@ export default function Home() {
             </div>
           </Carousel>
           ;
+        </div>
+      </section>
+      <div>
+        <div className="star"></div>
+      </div>
+      <section className="Projects">
+        <div className="d-flex justify-content-center">
+          <h2 className="border-bottom border-warning text-white">
+            My Projects
+          </h2>
         </div>
       </section>
     </>
