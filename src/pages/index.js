@@ -1,8 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useState } from "react";
 
 export default function Home() {
+  const [site, setSite] = useState(1);
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -133,7 +135,7 @@ export default function Home() {
               </p>
             </h4>
             <div className="col-lg-4 ">
-              <img src="./images/giphy.gif" alt="" className="gif img-fluid" />
+              <img src="./images/giphy.gif" alt="" className="img-fluid gif" />
             </div>
           </div>
         </div>
@@ -141,7 +143,7 @@ export default function Home() {
 
       {/* SKills sections */}
       <section
-        className="skills d-flex flex-column align-items-center  py-5"
+        className="skills d-flex flex-column align-items-center py-5"
         id="skills"
       >
         <div>
@@ -171,7 +173,11 @@ export default function Home() {
             </div>
             <div className="cards border text-white mx-3 mt-5 j">
               <div className="d-flex justify-content-center pt-3 font-style-poppins flex-column align-items-center">
-                <img src="./images/js.png" className="skill-icon mt-2" alt="" />
+                <img
+                  src="./images/js.png"
+                  className="skill-icon mt-2 img-fluid"
+                  alt=""
+                />
                 <h5 className="mt-3">Javascript</h5>
               </div>
             </div>
@@ -254,7 +260,7 @@ export default function Home() {
             className="py-5
             ps-lg-3 ps-1 col-12"
           >
-            <div className="certificates-img py-2">
+            <div className="certificates-img img-fluid">
               <div className="certificates h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
                   <div className="card-sec">
@@ -414,11 +420,75 @@ export default function Home() {
       <div>
         <div className="star"></div>
       </div>
+
+      {/* Projects */}
       <section className="Projects">
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center pb-5">
           <h2 className="border-bottom border-warning text-white">
             My Projects
           </h2>
+        </div>
+        <div className="d-flex justify-content-lg-end  me-5 pb-5">
+          <div className="d-flex justify-content-center">
+            <div
+              className={
+                site === 1
+                  ? "p-2 px-5 site-btn-left border-warning-spc site-btn text-white fw-bold set-button"
+                  : "p-2 px-5 site-btn-left border-warning-spc site-btn text-white fw-bold"
+              }
+              onClick={() => setSite(1)}
+            >
+              <i className="me-1 bi bi-laptop"></i> Desktop View
+            </div>
+            <div
+              className={
+                site === 0
+                  ? "p-2 px-5 border-warning-spc site-btn-right site-btn text-white fw-bold set-button"
+                  : "p-2 px-5 border-warning-spc site-btn-right site-btn text-white fw-bold"
+              }
+              onClick={() => setSite(0)}
+            >
+              <i className="me-1 bi bi-phone"></i>Mobile View
+            </div>
+          </div>
+        </div>
+
+        {/* project-content */}
+
+        <div className="d-flex justify-content-center">
+          {site === 1 ? (
+            <div className="d-flex justify-content-evenly col-12 project-sec flex-wrap">
+              <div className="border project-container p-3">
+                <img src="./images/cfl.jpg" alt="" className="img-fluid my-3" />
+              </div>
+              <div className="border project-container p-3">
+                <img src="./images/fkt.jpg" alt="" className="img-fluid my-3" />
+              </div>
+              <div className="border project-container p-3">
+                <img src="./images/zmc.jpg" alt="" className="img-fluid my-3" />
+              </div>
+            </div>
+          ) : (
+            <div className="d-flex justify-content-evenly col-12 project-sec flex-wrap">
+              <div className="border project-container p-3">
+                <img
+                  src="./images/cfl-m.jpg"
+                  alt=""
+                  className="img-fluid my-3"
+                />
+              </div>
+              <div className="border project-container p-3">
+                <img
+                  src="./images/fkt-m.jpg"
+                  alt=""
+                  className="img-fluid my-3"
+                />
+              </div>
+              <div className="border project-container p-3">
+                <img src="./images/zmc.jpg" alt="" className="img-fluid my-3" />
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </>
