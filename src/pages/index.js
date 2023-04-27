@@ -99,22 +99,26 @@ export default function Home() {
         </div>
         <div className="offcanvas-body offcanvas-trns p-0 m-0">
           <div className="text-white nav-text">
-            <a href="#Home">
+            <a  data-bs-dismiss="offcanvas"
+            aria-label="Close" href="#Home">
               <div className="fs-5 pointer border p-2 ps-4 py-3">
                 <i className="bi bi-house me-1"></i>Home
               </div>
             </a>
-            <a href="#About">
+            <a  data-bs-dismiss="offcanvas"
+            aria-label="Close" href="#About">
               <div className="fs-5 pointer border p-2 ps-4 py-3">
                 <i className="bi bi-person-check me-2"></i>About
               </div>
             </a>
-            <a href="#skills">
+            <a  data-bs-dismiss="offcanvas"
+            aria-label="Close" href="#skills">
               <div className="fs-5 pointer border p-2 ps-4 py-3">
                 <i className="bi bi-card-checklist me-1"></i>Skills
               </div>
             </a>
-            <a href="#certificates">
+            <a  data-bs-dismiss="offcanvas"
+            aria-label="Close" href="#certificates">
               <div className="fs-5 pointer border p-2 ps-4 py-3">
                 <i className="bi bi-patch-check me-1"></i>Certificates
               </div>
