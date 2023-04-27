@@ -26,7 +26,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="d-flex align-items-center justify-content-between px-5 nav">
+      <div className="d-flex align-items-center justify-content-between px-lg-5 nav">
         <img
           src="./images/Picsart_23-04-18_13-21-27-327.png"
           alt=""
@@ -61,17 +61,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <header className="top shadow-sm" id="Home">
-        <div className="blur">
+      <header className="top  shadow-sm" id="Home">
+        <div className="blur ">
           {/* left section */}
-          <section className="welcome-section d-lg-flex justify-content-between">
-            <div className="mt-4">
+          <section className="welcome-section d-flex justify-content-between align-items-center px-lg-3 ps-2">
+            <div className="mt-2 col-7">
               <h2 className="text-white display-6">Welcome !!</h2>
-              <div className="d-flex mt-4">
+              <div className="d-flex  mt-2">
                 <h1 className="text-white">I'M</h1>
-                <h1 className="ms-3 name">Ekansh Gupta</h1>
+                <h1 className="ms-lg-3 ms-1 name">Ekansh Gupta</h1>
               </div>
-              <h2 className="text-animation font-style-poppins">
+              <h2 className="text-animation mt-lg-3  font-style-poppins">
                 <TypeAnimation
                   sequence={[
                     "Full Stack Web Developer.",
@@ -88,11 +88,11 @@ export default function Home() {
                 />
               </h2>
             </div>
-            <div className="my-img position-relative">
+            <div className="my-img col-5 d-flex justify-content-end pe-2">
               <img
                 src="./images/me2.png"
                 alt=""
-                className="my-imgs img-fluid position-absolute rounded-circle p-1"
+                className="my-imgs img-fluid rounded-circle p-1"
               />
             </div>
           </section>
@@ -107,7 +107,7 @@ export default function Home() {
             About Me
           </div>
           <div className="d-lg-flex d-flex flex-column flex-lg-row justify-content-between mt-5 align-items-center">
-            <h4 className="text-white text-lg-start text-center font-style-new col-lg-6">
+            <h4 className="text-white text-start  font-style-new col-lg-6">
               <p>
                 As a <span className="text-warning">MERN</span> Stack Developer,
                 I specialize in building fast and scalable web applications
@@ -263,13 +263,13 @@ export default function Home() {
             <div className="certificates-img img-fluid">
               <div className="certificates h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
-                  <div className="card-sec">
+                  <div className="card-sec pt-3 d-flex justify-content-evenly ">
                     <a
                       href="./pdf/super intern.pdf"
                       download="./pdf/super intern.pdf"
                     >
-                      <button className="btn btn-warning px-4 py-2 mx-3 mt-4">
-                        Download
+                      <button className="btn btn-warning">
+                        Download <i className="ms-1 bi bi-download"></i>
                       </button>
                     </a>
 
@@ -277,8 +277,8 @@ export default function Home() {
                       href="https://www.edureka.co/lms/certificate/145eabe5036f147968a2b6479427da71"
                       target="_blank"
                     >
-                      <button className="btn btn-primary px-5 py-2 mx-5 mt-4">
-                        Verify
+                      <button className="btn btn-primary px-4">
+                        Verify <i className="ms-1 bi bi-check2-circle"></i>
                       </button>
                     </a>
                   </div>
@@ -294,13 +294,13 @@ export default function Home() {
             <div className="certificates-img img-fluid ">
               <div className="certificates-rct h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
-                  <div className="card-sec">
+                  <div className="card-sec pt-3 d-flex justify-content-evenly">
                     <a
                       href="./pdf/react-certificate.pdf"
                       download="./pdf/react-certificate.pdf"
                     >
-                      <button className="btn btn-warning px-4 py-2 mx-3 mt-4">
-                        Download
+                      <button className="btn btn-warning">
+                        Download <i className="ms-1 bi bi-download"></i>
                       </button>
                     </a>
 
@@ -308,8 +308,8 @@ export default function Home() {
                       href="https://www.edureka.co/lms/certificate/f6aa416636bee60958ec3c15935a641c"
                       target="_blank"
                     >
-                      <button className="btn btn-primary px-5 py-2 mx-5 mt-4">
-                        Verify
+                      <button className="btn btn-primary px-4">
+                        Verify <i className="ms-1 bi bi-check2-circle"></i>
                       </button>
                     </a>
                   </div>
@@ -325,10 +325,10 @@ export default function Home() {
             <div className="certificates-img img-fluid ">
               <div className="certificates-JS h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
-                  <div className="card-sec">
+                  <div className="card-sec pt-3 d-flex justify-content-evenly">
                     <a href="./pdf/js-cert.pdf" download="./pdf/js-cert.pdf">
-                      <button className="btn btn-warning  px-4 py-2 mx-3 mt-4">
-                        Download
+                      <button className="btn btn-warning ">
+                        Download <i className="ms-1 bi bi-download"></i>
                       </button>
                     </a>
 
@@ -336,8 +336,8 @@ export default function Home() {
                       href="https://www.edureka.co/lms/certificate/116e1db5cb1f8e4cf051d74db78a63dd"
                       target="_blank"
                     >
-                      <button className="btn btn-primary px-5 py-2 mx-5 mt-4">
-                        Verify
+                      <button className="btn btn-primary px-4">
+                        Verify <i className="ms-1 bi bi-check2-circle"></i>
                       </button>
                     </a>
                   </div>
@@ -353,13 +353,13 @@ export default function Home() {
             <div className="certificates-img img-fluid ">
               <div className="certificates-mern h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
-                  <div className="card-sec">
+                  <div className="card-sec pt-3 d-flex justify-content-evenly">
                     <a
                       href="./pdf/node,express,mongodb.pdf"
                       download="./pdf/node,express,mongodb.pdf"
                     >
-                      <button className="btn btn-warning px-4 py-2 mx-3 mt-4">
-                        Download
+                      <button className="btn btn-warning">
+                        Download <i className="ms-1 bi bi-download"></i>
                       </button>
                     </a>
 
@@ -367,8 +367,8 @@ export default function Home() {
                       href="https://www.edureka.co/lms/certificate/446e0d78989d6dd9136194b2edbffc6d"
                       target="_blank"
                     >
-                      <button className="btn btn-primary px-5 py-2 mx-5 mt-4">
-                        Verify
+                      <button className="btn btn-primary px-4">
+                        Verify <i className="ms-1 bi bi-check2-circle"></i>
                       </button>
                     </a>
                   </div>
@@ -385,13 +385,13 @@ export default function Home() {
             <div className="certificates-img img-fluid ">
               <div className="certificates-html h-100 position-relative">
                 <div className="position-absolute cert-btn w-100">
-                  <div className="card-sec">
+                  <div className="card-sec pt-3 d-flex justify-content-evenly">
                     <a
                       href="./pdf/Html,Css,Bootstrap.pdf"
                       download="./pdf/Html,Css,Bootstrap.pdf"
                     >
-                      <button className="btn btn-warning px-4 py-2 mx-3 mt-4">
-                        Download
+                      <button className="btn btn-warning">
+                        Download <i className="ms-1 bi bi-download"></i>
                       </button>
                     </a>
 
@@ -399,8 +399,8 @@ export default function Home() {
                       href="https://www.edureka.co/lms/certificate/b5b96527a71c8989bb818ad88fa9b1e0"
                       target="_blank"
                     >
-                      <button className="btn btn-primary px-5 py-2 mx-5 mt-4">
-                        Verify
+                      <button className="btn btn-primary px-4">
+                        Verify <i className="ms-1 bi bi-check2-circle"></i>
                       </button>
                     </a>
                   </div>
@@ -428,7 +428,7 @@ export default function Home() {
             My Projects
           </h2>
         </div>
-        <div className="d-flex justify-content-lg-end justify-content-center  me-5 pb-5">
+        <div className="d-flex justify-content-lg-end justify-content-center  me-lg-5 pb-5">
           <div className="d-flex justify-content-center">
             <div
               className={
@@ -458,33 +458,33 @@ export default function Home() {
         <div className="d-flex justify-content-center">
           {site === 1 ? (
             <div className="d-flex justify-content-evenly col-12 project-sec flex-wrap">
-              <div className="border project-container p-3">
+              <div className="border project-container mt-3 p-3">
                 <img src="./images/cfl.jpg" alt="" className="img-fluid my-3" />
               </div>
-              <div className="border project-container p-3">
+              <div className="border project-container mt-3 p-3">
                 <img src="./images/fkt.jpg" alt="" className="img-fluid my-3" />
               </div>
-              <div className="border project-container p-3">
+              <div className="border project-container mt-3 p-3">
                 <img src="./images/zmc.jpg" alt="" className="img-fluid my-3" />
               </div>
             </div>
           ) : (
             <div className="d-flex justify-content-evenly col-12 project-sec flex-wrap">
-              <div className="border project-container p-3">
+              <div className="border project-container mt-3 p-3">
                 <img
                   src="./images/cfl-m.jpg"
                   alt=""
                   className="img-fluid my-3"
                 />
               </div>
-              <div className="border project-container p-3">
+              <div className="border project-container mt-3 p-3">
                 <img
                   src="./images/fkt-m.jpg"
                   alt=""
                   className="img-fluid my-3"
                 />
               </div>
-              <div className="border project-container p-3">
+              <div className="border project-container mt-3 p-3">
                 <img src="./images/zmc.jpg" alt="" className="img-fluid my-3" />
               </div>
             </div>

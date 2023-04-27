@@ -74,7 +74,7 @@ a:hover {
 
 .welcome-section {
   padding-top: 10rem;
-  padding-left: 5rem;
+  /* padding-left: 5rem; */
 }
 
 .welcome-section h1 {
@@ -89,14 +89,6 @@ a:hover {
   color: gold;
 }
 
-.my-img {
-  height: 29rem;
-  width: 30rem;
-  top: -4rem;
-  margin-right: 5rem;
-}
-
-/* sb */
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -121,7 +113,6 @@ a:hover {
 .text-animation {
   color: gold;
   font-size: 2.9rem;
-  margin-top: 2rem;
   font-weight: 500;
 }
 
@@ -249,10 +240,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.253);
 }
 
-.card-sec {
-  margin-left: 4.5rem;
-}
-
 .cert-title {
   font-size: 1.1rem;
 }
@@ -312,4 +299,98 @@ a:hover {
 
 .border-warning-spc {
   border: 1px solid orange;
+}
+
+/* media */
+@media only screen and (min-width: 0px) and (max-width: 750px) {
+  .welcome-section h2 {
+    font-size: 1rem !important;
+  }
+
+  .welcome-section h1 {
+    font-size: 1.2rem !important;
+  }
+  .my-imgs {
+    height: 8rem;
+    width: 8rem;
+    background: linear-gradient(
+      rgba(128, 0, 128, 0.704),
+      rgba(255, 166, 0, 0.644)
+    );
+    box-shadow: 5px 2rem 3rem rgba(55, 55, 55, 0.492);
+  }
+
+  .top {
+    height: 60%;
+  }
+  .blur {
+    height: 60%;
+    padding-bottom: 2rem;
+  }
+
+  .nav-text {
+    font-size: 1vw !important;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+  .welcome-section h2 {
+    font-size: 2rem !important;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.5rem !important;
+  }
+  .my-imgs {
+    height: 15rem;
+    width: 15rem;
+    background: linear-gradient(
+      rgba(128, 0, 128, 0.704),
+      rgba(255, 166, 0, 0.644)
+    );
+    box-shadow: 5px 2rem 3rem rgba(55, 55, 55, 0.492);
+  }
+
+  .top {
+    height: 70%;
+  }
+  .blur {
+    height: 70%;
+    padding-bottom: 2rem;
+  }
+
+  .nav-text {
+    font-size: 1vw !important;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+  .welcome-section h2 {
+    font-size: 3rem !important;
+  }
+
+  .welcome-section h1 {
+    font-size: 3.5rem !important;
+  }
+  .my-imgs {
+    height: 20rem;
+    width: 20rem;
+    background: linear-gradient(
+      rgba(128, 0, 128, 0.704),
+      rgba(255, 166, 0, 0.644)
+    );
+    box-shadow: 5px 2rem 3rem rgba(55, 55, 55, 0.492);
+  }
+
+  .top {
+    height: 70%;
+  }
+  .blur {
+    height: 70%;
+    padding-bottom: 2rem;
+  }
+
+  .nav-text {
+    font-size: 1vw !important;
+  }
 }
