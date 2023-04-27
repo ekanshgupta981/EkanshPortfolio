@@ -12,15 +12,15 @@ export default function Home() {
       items: 5,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1450 },
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      breakpoint: { max: 1450, min: 1000 },
+      items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 1000, min: 0 },
       items: 1,
     },
   };
@@ -258,7 +258,7 @@ export default function Home() {
             showDots={true}
             swipeable={true}
             className="py-5
-            ps-lg-3 ps-1 col-12"
+            ps-lg-3 ps-1 col-12 "
           >
             <div className="certificates-img img-fluid">
               <div className="certificates h-100 position-relative">
@@ -428,13 +428,13 @@ export default function Home() {
             My Projects
           </h2>
         </div>
-        <div className="d-flex justify-content-lg-end  me-5 pb-5">
+        <div className="d-flex justify-content-lg-end justify-content-center  me-5 pb-5">
           <div className="d-flex justify-content-center">
             <div
               className={
                 site === 1
-                  ? "p-2 px-5 site-btn-left border-warning-spc site-btn text-white fw-bold set-button"
-                  : "p-2 px-5 site-btn-left border-warning-spc site-btn text-white fw-bold"
+                  ? "p-lg-2 p-1 px-lg-5 px-3 site-btn-left border-warning-spc site-btn text-white fw-bold set-button"
+                  : "p-lg-2 p-1 px-lg-5 px-3 site-btn-left border-warning-spc site-btn text-white fw-bold"
               }
               onClick={() => setSite(1)}
             >
@@ -443,8 +443,8 @@ export default function Home() {
             <div
               className={
                 site === 0
-                  ? "p-2 px-5 border-warning-spc site-btn-right site-btn text-white fw-bold set-button"
-                  : "p-2 px-5 border-warning-spc site-btn-right site-btn text-white fw-bold"
+                  ? "p-lg-2 p-1 px-lg-5 px-3 border-warning-spc site-btn-right site-btn text-white fw-bold set-button"
+                  : "p-lg-2 p-1 px-lg-5 px-3 border-warning-spc site-btn-right site-btn text-white fw-bold"
               }
               onClick={() => setSite(0)}
             >
