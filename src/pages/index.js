@@ -30,9 +30,9 @@ export default function Home() {
         <img
           src="./images/Picsart_23-04-18_13-21-27-327.png"
           alt=""
-          className="logo ms-5"
+          className="logo ms-lg-5 ms-2"
         />
-        <div className="text-white nav-text d-flex justify-content-evenly justify-content-evenly col-lg-7 col-9">
+        <div className="text-white nav-text d-lg-flex d-none justify-content-evenly justify-content-evenly col-lg-7 col-9">
           <div className="fs-5 pointer">
             <a href="#Home">
               <i className="bi bi-house me-1"></i>Home
@@ -60,7 +60,76 @@ export default function Home() {
             <i className="bi bi-telephone me-1"></i> Contact
           </div>
         </div>
+
+        {/* nav mobie */}
+        <button
+          className="text-white bg-none border-0 px-3 p-1 mt-3 py-2 me-3 d-lg-none d-flex"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop"
+        >
+          <h1>
+            <i className="bi bi-list"></i>
+          </h1>
+        </button>
       </div>
+
+      <div
+        className="offcanvas offcanvas-end border-start border-1"
+        tabindex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
+        <div className="offcanvas-header p-0">
+          <h5 className="offcanvas-title" id="offcanvasTopLabel">
+            <img
+              src="./images/Picsart_23-04-18_13-21-27-327.png"
+              alt=""
+              className="logo ms-2"
+            />
+          </h5>
+          <button
+            type="button"
+            className="btn btn-outline-dark border-0 text-white me-3"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i className="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div className="offcanvas-body offcanvas-trns p-0 m-0">
+          <div className="text-white nav-text">
+            <a href="#Home">
+              <div className="fs-5 pointer border p-2 ps-4 py-3">
+                <i className="bi bi-house me-1"></i>Home
+              </div>
+            </a>
+            <a href="#About">
+              <div className="fs-5 pointer border p-2 ps-4 py-3">
+                <i className="bi bi-person-check me-2"></i>About
+              </div>
+            </a>
+            <a href="#skills">
+              <div className="fs-5 pointer border p-2 ps-4 py-3">
+                <i className="bi bi-card-checklist me-1"></i>Skills
+              </div>
+            </a>
+            <a href="#certificates">
+              <div className="fs-5 pointer border p-2 ps-4 py-3">
+                <i className="bi bi-patch-check me-1"></i>Certificates
+              </div>
+            </a>
+            <div className="fs-5 pointer border p-2 ps-4 py-3">
+              <i className="bi bi-window-stack me-1"></i> Projects
+            </div>
+            <div className="fs-5 pointer border p-2 ps-4 py-3">
+              <i className="bi bi-telephone me-1"></i> Contact
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* nav mobile end */}
       <header className="top  shadow-sm" id="Home">
         <div className="blur ">
           {/* left section */}

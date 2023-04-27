@@ -41,7 +41,8 @@ a:hover {
 .font-style-new {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/* nav */
+
+/*====> nav */
 
 .nav {
   background-color: rgba(9, 0, 0, 0.551);
@@ -60,6 +61,18 @@ a:hover {
   width: 5rem;
 }
 
+.offcanvas-trns,
+.offcanvas-body {
+  background-color: rgba(9, 0, 0, 0.551) !important;
+  background: rgba(9, 0, 0, 0.551) !important;
+}
+
+.offcanvas {
+  background-color: rgba(9, 0, 0, 0.973);
+}
+.bg-none {
+  background: none;
+}
 .pointer {
   cursor: pointer;
 }
@@ -299,6 +312,10 @@ a:hover {
 
 .border-warning-spc {
   border: 1px solid orange;
+}
+
+.offcanvas {
+  width: 75vw !important;
 }
 
 /* media */
