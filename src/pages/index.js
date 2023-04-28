@@ -41,7 +41,7 @@ export default function Home() {
           </div>
           <div className="fs-5 pointer">
             <a href="#About">
-              <i className="bi bi-person-check me-2"></i>About
+              <i className="bi bi-person-check me-lg-2 me-1"></i>About
             </a>
           </div>
           <div className="fs-5 pointer">
