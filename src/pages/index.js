@@ -353,7 +353,7 @@ export default function Home() {
                     </a>
                   </div>
                   <div className="d-flex justify-content-center pt-3 ">
-                    <h6 className="text-white col-lg-7 col-9 text-center cert-title">
+                    <h6 className="text-white col-lg-8 col-10 border text-center cert-title">
                       Certificate For Making My Own Website From Scratch.
                     </h6>
                   </div>
@@ -384,7 +384,7 @@ export default function Home() {
                     </a>
                   </div>
                   <div className="d-flex justify-content-center pt-3 ">
-                    <h6 className="text-white col-lg-7 col-9 text-center cert-title">
+                    <h6 className="text-white col-lg-8 col-10 border text-center cert-title">
                       Certificate For Completing React Project.
                     </h6>
                   </div>
@@ -412,7 +412,7 @@ export default function Home() {
                     </a>
                   </div>
                   <div className="d-flex justify-content-center pt-3 ">
-                    <h6 className="text-white col-lg-7 col-9 text-center cert-title">
+                    <h6 className="text-white col-lg-8 col-10 border text-center cert-title">
                       Certificate For Completing JavaScript Project.
                     </h6>
                   </div>
@@ -443,7 +443,7 @@ export default function Home() {
                     </a>
                   </div>
                   <div className="d-flex justify-content-center pt-3 ">
-                    <h6 className="text-white col-lg-7 col-9 text-center cert-title">
+                    <h6 className="text-white col-lg-8 col-10 border text-center cert-title">
                       Certificate For Completing NodeJs, ExpressJs, MongoDb
                       Project.
                     </h6>
@@ -475,7 +475,7 @@ export default function Home() {
                     </a>
                   </div>
                   <div className="d-flex justify-content-center pt-3 ">
-                    <h6 className="text-white col-lg-7 col-9 text-center cert-title">
+                    <h6 className="text-white col-lg-8 col-10 border text-center cert-title">
                       Certificate For Making Website Using Only Html, Css,
                       Bootstrap.
                     </h6>
