@@ -68,7 +68,11 @@ a:hover {
 }
 
 .offcanvas {
-  background-color: rgba(9, 0, 0, 0.973);
+  background-color: rgba(9, 0, 0, 0);
+}
+
+.bg-nav-mb {
+  background-color: rgb(24, 16, 16);
 }
 .bg-none {
   background: none;
@@ -320,6 +324,9 @@ a:hover {
 
 /* media */
 @media only screen and (min-width: 0px) and (max-width: 750px) {
+  .font-style-new {
+    font-size: 1rem;
+  }
   .welcome-section h2 {
     font-size: 1rem !important;
   }

@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [site, setSite] = useState(1);
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -80,7 +81,7 @@ export default function Home() {
         id="offcanvasTop"
         aria-labelledby="offcanvasTopLabel"
       >
-        <div className="offcanvas-header p-0">
+        <div className="offcanvas-header bg-nav-mb p-0">
           <h5 className="offcanvas-title" id="offcanvasTopLabel">
             <img
               src="./images/Picsart_23-04-18_13-21-27-327.png"
@@ -99,34 +100,30 @@ export default function Home() {
         </div>
         <div className="offcanvas-body offcanvas-trns p-0 m-0">
           <div className="text-white nav-text">
-            <a  data-bs-dismiss="offcanvas"
-            aria-label="Close" href="#Home">
-              <div className="fs-5 pointer border p-2 ps-4 py-3">
+            <a href="#Home">
+              <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
                 <i className="bi bi-house me-1"></i>Home
               </div>
             </a>
-            <a  data-bs-dismiss="offcanvas"
-            aria-label="Close" href="#About">
-              <div className="fs-5 pointer border p-2 ps-4 py-3">
+            <a href="#About">
+              <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
                 <i className="bi bi-person-check me-2"></i>About
               </div>
             </a>
-            <a  data-bs-dismiss="offcanvas"
-            aria-label="Close" href="#skills">
-              <div className="fs-5 pointer border p-2 ps-4 py-3">
+            <a href="#skills">
+              <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
                 <i className="bi bi-card-checklist me-1"></i>Skills
               </div>
             </a>
-            <a  data-bs-dismiss="offcanvas"
-            aria-label="Close" href="#certificates">
-              <div className="fs-5 pointer border p-2 ps-4 py-3">
+            <a href="#certificates">
+              <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
                 <i className="bi bi-patch-check me-1"></i>Certificates
               </div>
             </a>
-            <div className="fs-5 pointer border p-2 ps-4 py-3">
+            <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
               <i className="bi bi-window-stack me-1"></i> Projects
             </div>
-            <div className="fs-5 pointer border p-2 ps-4 py-3">
+            <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
               <i className="bi bi-telephone me-1"></i> Contact
             </div>
           </div>
@@ -172,15 +169,15 @@ export default function Home() {
         </div>
       </header>
 
-      {/*=========> intro-sec <======== */}
+      {/*=========> about-sec <======== */}
 
       <section className="intro-sec py-5 px-lg-5 px-3" id="About">
         <div className="d-flex justify-content-center flex-column align-items-center">
           <div className=" font-style-poppins text-white h2 about-me border-bottom border-warning">
             About Me
           </div>
-          <div className="d-lg-flex d-flex flex-column flex-lg-row justify-content-between mt-5 align-items-center">
-            <h4 className="text-white text-start  font-style-new col-lg-6">
+          <div className="d-lg-flex d-flex flex-column flex-lg-row justify-content-between  mt-lg-5 mt-3 align-items-center">
+            <h4 className="text-white text-lg-start text-center font-style-new col-lg-6">
               <p>
                 As a <span className="text-warning">MERN</span> Stack Developer,
                 I specialize in building fast and scalable web applications
