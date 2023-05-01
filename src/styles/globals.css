@@ -327,7 +327,7 @@ a:hover {
 @media only screen and (min-width: 0px) and (max-width: 750px) {
   .project-container {
     min-height: 35rem;
-    width: 90%;
+    width: 95%;
   }
   .font-style-new {
     font-size: 1rem;
