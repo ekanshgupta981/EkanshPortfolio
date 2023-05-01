@@ -122,9 +122,12 @@ export default function Home() {
                 <i className="bi bi-patch-check me-1"></i>Certificates
               </div>
             </a>
-            <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
-              <i className="bi bi-window-stack me-1"></i> Projects
-            </div>
+            <a  href="#projects"> 
+              <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
+                 <i className="bi bi-window-stack me-1"></i> Projects
+              </div> 
+            </a>
+            
             <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
               <i className="bi bi-telephone me-1"></i> Contact
             </div>
