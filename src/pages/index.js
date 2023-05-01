@@ -55,7 +55,9 @@ export default function Home() {
             </a>
           </div>
           <div className="fs-5 pointer">
-            <i className="bi bi-window-stack me-1"></i> Projects
+            <a href="#projects">
+              <i className="bi bi-window-stack me-1"></i> Projects
+            </a>
           </div>
           <div className="fs-5 pointer">
             <i className="bi bi-telephone me-1"></i> Contact
@@ -110,7 +112,7 @@ export default function Home() {
                 <i className="bi bi-person-check me-2"></i>About
               </div>
             </a>
-            <a href="#skills">
+            <a href="#skills" data-bs-dismiss="offcanvas" aria-label="Close">
               <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
                 <i className="bi bi-card-checklist me-1"></i>Skills
               </div>
@@ -492,7 +494,7 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <section className="Projects">
+      <section className="Projects" id="projects">
         <div className="d-flex justify-content-center pb-5">
           <h2 className="border-bottom border-warning text-white">
             My Projects
@@ -528,34 +530,158 @@ export default function Home() {
         <div className="d-flex justify-content-center">
           {site === 1 ? (
             <div className="d-flex justify-content-evenly col-12 project-sec flex-wrap">
-              <div className="border project-container mt-3 p-3">
+              <div className="border project-container mt-3 p-1 pb-3 d-flex flex-column align-items-center">
                 <img src="./images/cfl.jpg" alt="" className="img-fluid my-3" />
+                <div className="d-flex pt-4 justify-content-between col-lg-9 col-10">
+                  <a href="https://caffelatte-1.netlify.app" target="_blank">
+                    <button className="px-4 fw-bold btn btn-light">
+                      Go to site
+                      <i className="bi bi-box-arrow-up-right ms-1"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/ekanshgupta981/caffeLatte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <button className="px-4 fw-bold btn btn-light">
+                      GitHub Link <i className="bi bi-github ms-1"></i>
+                    </button>
+                  </a>
+                </div>
+                <div classname="">
+                  <h5 className="font-style-poppins text-white pt-4 text-center ">
+                    This is Desktop view of cafe shop website which is made with
+                    Mern technology and have backend and frontend programming.
+                  </h5>
+                </div>
               </div>
-              <div className="border project-container mt-3 p-3">
+
+              <div className="border project-container mt-3 p-1 pb-3 d-flex flex-column align-items-center">
                 <img src="./images/fkt.jpg" alt="" className="img-fluid my-3" />
+                <div className="d-flex pt-4 justify-content-between col-lg-9 col-10">
+                  <a
+                    href="https://flipkart-clone-1.netlify.app/"
+                    target="_blank"
+                  >
+                    <button className="px-4 fw-bold btn btn-light">
+                      Go to site
+                      <i className="bi bi-box-arrow-up-right ms-1"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/ShehrozEdu/e-Commerce-client-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-4 fw-bold btn btn-light">
+                      GitHub Link <i className="bi bi-github ms-1"></i>
+                    </button>
+                  </a>
+                </div>
+                <div classname="">
+                  <h5 className="font-style-poppins text-white pt-4 text-center ">
+                    This is Desktop view of Flipkart group project website which
+                    is made with Mern technology and have backend and frontend
+                    programming.
+                  </h5>
+                </div>
               </div>
-              <div className="border project-container mt-3 p-3">
+              <div className="border project-container mt-3 p-1 pb-3 d-flex flex-column align-items-center">
                 <img src="./images/zmc.jpg" alt="" className="img-fluid my-3" />
+                <div className="d-flex pt-4 justify-content-between col-lg-9 col-10">
+                  <a href="https://zomato-clone-2.netlify.app/" target="_blank">
+                    <button className="px-4 fw-bold btn btn-light">
+                      Go to site
+                      <i className="bi bi-box-arrow-up-right ms-1"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/ekanshgupta981/zomato-clone"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-4 fw-bold btn btn-light">
+                      GitHub Link <i className="bi bi-github ms-1"></i>
+                    </button>
+                  </a>
+                </div>
+
+                <div classname="">
+                  <h5 className="font-style-poppins text-white pt-4 text-center ">
+                    This is Desktop view of Zomato project website which is made
+                    with Mern technology and have backend and frontend
+                    programming And Have filter.
+                  </h5>
+                </div>
               </div>
             </div>
           ) : (
             <div className="d-flex justify-content-evenly col-12 project-sec flex-wrap">
-              <div className="border project-container mt-3 p-3">
+              <div className="border project-container mt-3 p-1 pb-3 d-flex flex-column align-items-center">
                 <img
                   src="./images/cfl-m.jpg"
                   alt=""
                   className="img-fluid my-3"
                 />
+                <div className="d-flex pt-4 justify-content-between col-lg-9 col-10">
+                  <a href="https://caffelatte-1.netlify.app" target="_blank">
+                    <button className="px-4 fw-bold btn btn-light">
+                      Go to site
+                      <i className="bi bi-box-arrow-up-right ms-1"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/ekanshgupta981/caffeLatte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-4 fw-bold btn btn-light">
+                      GitHub Link <i className="bi bi-github ms-1"></i>
+                    </button>
+                  </a>
+                </div>
+                <div classname="">
+                  <h5 className="font-style-poppins text-white pt-4 text-center ">
+                    This is Mobile view of cafe shop website which is made with
+                    Mern technology and have backend and frontend programming.
+                  </h5>
+                </div>
               </div>
-              <div className="border project-container mt-3 p-3">
+              <div className="border project-container mt-3 p-1 pb-3 d-flex flex-column align-items-center">
                 <img
                   src="./images/fkt-m.jpg"
                   alt=""
                   className="img-fluid my-3"
                 />
-              </div>
-              <div className="border project-container mt-3 p-3">
-                <img src="./images/zmc.jpg" alt="" className="img-fluid my-3" />
+                <div className="d-flex pt-4 justify-content-between col-lg-9 col-10">
+                  <a
+                    href="https://flipkart-clone-1.netlify.app/"
+                    target="_blank"
+                  >
+                    <button className="px-4 fw-bold btn btn-light">
+                      Go to site
+                      <i className="bi bi-box-arrow-up-right ms-1"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/ShehrozEdu/e-Commerce-client-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-4 fw-bold btn btn-light">
+                      GitHub Link <i className="bi bi-github ms-1"></i>
+                    </button>
+                  </a>
+                </div>
+                <div classname="">
+                  <h5 className="font-style-poppins text-white pt-4 text-center ">
+                    This is Mobile view of Flipkart Group project website which
+                    is made with Mern technology and have backend and frontend
+                    programming.
+                  </h5>
+                </div>
               </div>
             </div>
           )}
