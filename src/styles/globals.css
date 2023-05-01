@@ -290,7 +290,7 @@ a:hover {
 
 .project-container {
   min-height: 35rem;
-  width:32%
+  width: 32%;
 }
 
 .set-button {
@@ -327,7 +327,7 @@ a:hover {
 @media only screen and (min-width: 0px) and (max-width: 750px) {
   .project-container {
     min-height: 35rem;
-    width:80%
+    width: 90%;
   }
   .font-style-new {
     font-size: 1rem;
@@ -365,7 +365,7 @@ a:hover {
 @media only screen and (min-width: 750px) and (max-width: 1000px) {
   .project-container {
     min-height: 35rem;
-    width:48%
+    width: 48%;
   }
   .welcome-section h2 {
     font-size: 2rem !important;
@@ -400,7 +400,7 @@ a:hover {
 @media only screen and (min-width: 1000px) and (max-width: 1500px) {
   .project-container {
     min-height: 35rem;
-    width:40%
+    width: 40%;
   }
   .welcome-section h2 {
     font-size: 3rem !important;
