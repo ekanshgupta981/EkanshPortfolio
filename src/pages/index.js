@@ -800,7 +800,7 @@ export default function Main() {
                     <i className="bi bi-geo-alt-fill me-3"></i>
                     <span>India, Delhi</span>
                   </p>
-                  <a href="mailto:emailaddress@example.com">
+                  <a href="mailto:workwithekansh@gmail.com">
                     <p>
                       <i className="bi bi-envelope-at-fill me-3"></i>
                       <span className="text-warning cursor-pointer">
