@@ -1,9 +1,9 @@
 import { TypeAnimation } from "react-type-animation";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function Home() {
+export default function Main() {
   const [site, setSite] = useState(1);
 
   const responsive = {
@@ -25,6 +25,7 @@ export default function Home() {
       items: 1,
     },
   };
+  //   useEffect(() => {}, []);
   return (
     <>
       <div className="d-flex align-items-center justify-content-between px-lg-5 nav">
@@ -339,7 +340,7 @@ export default function Home() {
             showDots={true}
             swipeable={true}
             className="py-5
-            ps-lg-3 ps-1 col-12 "
+          ps-lg-3 ps-1 col-12 "
           >
             <div className="certificates-img img-fluid">
               <div className="certificates h-100 position-relative">
@@ -705,23 +706,23 @@ export default function Home() {
 
           <div className="d-flex justify-content-around social-media-icons">
             {/* <div>
-              <i
-                className="fa fa-facebook text-light mx-3 fb"
-                aria-hidden="true"
-              ></i>
-            </div>
-            <div>
-              <i
-                className="fa fa-twitter text-light mx-3 tweet"
-                aria-hidden="true"
-              ></i>
-            </div>
-            <div>
-              <i
-                className="fa fa-google text-light mx-3 google"
-                aria-hidden="true"
-              ></i>
-            </div> */}
+            <i
+              className="fa fa-facebook text-light mx-3 fb"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div>
+            <i
+              className="fa fa-twitter text-light mx-3 tweet"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div>
+            <i
+              className="fa fa-google text-light mx-3 google"
+              aria-hidden="true"
+            ></i>
+          </div> */}
             <a
               href="https://api.whatsapp.com/send?phone=919650910557"
               target="_blank"
@@ -802,7 +803,7 @@ export default function Home() {
                   <a href="mailto:emailaddress@example.com">
                     <p>
                       <i className="bi bi-envelope-at-fill me-3"></i>
-                      <span className="text-warning">
+                      <span className="text-warning cursor-pointer">
                         workwithekansh@gmail.com
                       </span>
                     </p>
@@ -810,7 +811,24 @@ export default function Home() {
 
                   <p>
                     <i className="bi bi-telephone-fill me-3"></i>
-                    <span>+91 9650910557</span>
+                    <span className="text-warning cursor-pointer">
+                      <a href="tel:+919650910557">
+                        Click to call me on +91 9650910557
+                      </a>
+                    </span>
+                  </p>
+
+                  <p>
+                    <i className="bi bi-whatsapp text-light me-3 "></i>
+                    <span className="text-warning cursor-pointer">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=919650910557"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Click to contact me on whatsapp
+                      </a>
+                    </span>
                   </p>
                 </div>
               </div>
