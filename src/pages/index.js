@@ -28,11 +28,13 @@ export default function Home() {
   return (
     <>
       <div className="d-flex align-items-center justify-content-between px-lg-5 nav">
-        <img
-          src="./images/Picsart_23-04-18_13-21-27-327.png"
-          alt=""
-          className="logo ms-lg-5 ms-2"
-        />
+        <a href="#Home">
+          <img
+            src="./images/Picsart_23-04-18_13-21-27-327.png"
+            alt=""
+            className="logo ms-lg-5 ms-2"
+          />
+        </a>
         <div className="text-white nav-text d-lg-flex d-none justify-content-evenly justify-content-evenly col-lg-7 col-9">
           <div className="fs-5 pointer">
             <a href="#Home">
@@ -60,7 +62,9 @@ export default function Home() {
             </a>
           </div>
           <div className="fs-5 pointer">
-            <i className="bi bi-telephone me-1"></i> Contact
+            <a href="#contact">
+              <i className="bi bi-telephone me-1"></i> Contact
+            </a>
           </div>
         </div>
 
@@ -112,7 +116,7 @@ export default function Home() {
                 <i className="bi bi-person-check me-2"></i>About
               </div>
             </a>
-            <a href="#skills" data-bs-dismiss="offcanvas" aria-label="Close">
+            <a href="#skills">
               <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
                 <i className="bi bi-card-checklist me-1"></i>Skills
               </div>
@@ -122,15 +126,17 @@ export default function Home() {
                 <i className="bi bi-patch-check me-1"></i>Certificates
               </div>
             </a>
-            <a  href="#projects"> 
+            <a href="#projects">
               <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
-                 <i className="bi bi-window-stack me-1"></i> Projects
-              </div> 
+                <i className="bi bi-window-stack me-1"></i> Projects
+              </div>
             </a>
-            
-            <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
-              <i className="bi bi-telephone me-1"></i> Contact
-            </div>
+
+            <a href="#contact">
+              <div className="fs-5 pointer  border-1 border-bottom p-2 ps-4 py-3">
+                <i className="bi bi-telephone me-1"></i> Contact
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -547,7 +553,6 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {" "}
                     <button className="px-4 fw-bold btn btn-light">
                       GitHub Link <i className="bi bi-github ms-1"></i>
                     </button>
@@ -690,6 +695,136 @@ export default function Home() {
           )}
         </div>
       </section>
+
+      {/* Contact & Footer */}
+      <footer className="custom-footer">
+        <section className="d-flex justify-content-lg-between justify-content-center border-bottom border-1 border-muted p-4 align-items-center ">
+          <div className="text-light fs-5 d-lg-flex d-none">
+            Contact Me on Social Network
+          </div>
+
+          <div className="d-flex justify-content-around social-media-icons">
+            {/* <div>
+              <i
+                className="fa fa-facebook text-light mx-3 fb"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div>
+              <i
+                className="fa fa-twitter text-light mx-3 tweet"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div>
+              <i
+                className="fa fa-google text-light mx-3 google"
+                aria-hidden="true"
+              ></i>
+            </div> */}
+            <a
+              href="https://api.whatsapp.com/send?phone=919650910557"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <i className="bi bi-whatsapp text-light mx-3 wp"></i>
+              </div>
+            </a>
+
+            <div>
+              <i
+                className="fa fa-linkedin text-light mx-3 linkdin"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <a
+              href="https://github.com/ekanshgupta981"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <i
+                  className="fa fa-github text-light mx-3 git"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </a>
+          </div>
+        </section>
+        {/* mid footer */}
+        <section id="contact">
+          <section className="text-light small">
+            <div className="container text-center text-md-start mt-2">
+              <div className="row mt-3">
+                <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <h6 className="text-uppercase fw-bold mb-4">
+                    <div className="d-flex align-items-center">
+                      <div className="mx-2">
+                        <img
+                          src="./images/Picsart_23-04-18_13-21-27-327.png"
+                          alt=""
+                          className="logo-mini me-1"
+                        />
+                      </div>
+                      <div className="font-style-new mt-1">Ekansh Gupta</div>
+                    </div>
+                  </h6>
+                  <p>
+                    "I am a proficient MERN Stack Web Developer, dedicated to
+                    crafting top-notch web applications with efficient coding
+                    skills and a keen eye for design."
+                  </p>
+                </div>
+
+                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <h6 className="text-uppercase fw-bold mb-4">Technology</h6>
+                  <p>
+                    <a>MongodB</a>
+                  </p>
+                  <p>
+                    <a>Express Js</a>
+                  </p>
+                  <p>
+                    <a>React</a>
+                  </p>
+                  <p>
+                    <a>Node js</a>
+                  </p>
+                </div>
+
+                <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <h6 className="text-uppercase fw-bold mb-4 ">Contact</h6>
+                  <p>
+                    <i className="bi bi-geo-alt-fill me-3"></i>
+                    <span>India, Delhi</span>
+                  </p>
+                  <a href="mailto:emailaddress@example.com">
+                    <p>
+                      <i className="bi bi-envelope-at-fill me-3"></i>
+                      <span className="text-warning">
+                        workwithekansh@gmail.com
+                      </span>
+                    </p>
+                  </a>
+
+                  <p>
+                    <i className="bi bi-telephone-fill me-3"></i>
+                    <span>+91 9650910557</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section className="d-flex justify-content-center border-1 border-top border-muted mt">
+          <div>
+            <h5 className="text-muted pt-2">
+              © 2023 Copyright: Ekansh Gupta Portfolio
+            </h5>
+          </div>
+        </section>
+      </footer>
     </>
   );
 }

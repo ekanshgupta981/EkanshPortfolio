@@ -61,6 +61,11 @@ a:hover {
   width: 5rem;
 }
 
+.logo-mini {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
 .offcanvas-trns,
 .offcanvas-body {
   background-color: rgba(9, 0, 0, 0.551) !important;
@@ -321,6 +326,44 @@ a:hover {
 
 .offcanvas {
   width: 75vw !important;
+}
+
+/* footer */
+.custom-footer {
+  height: 51%;
+  background-color: black;
+  width: 100%;
+}
+
+.social-media-icons i {
+  cursor: pointer;
+}
+.fb:hover {
+  text-shadow: 0px 0px 5px rgb(4, 0, 255), 0px 0px 12px rgb(0, 21, 255),
+    0px 0px 20px rgb(0, 21, 255), 0px 0px 30px rgb(0, 21, 255);
+}
+.tweet:hover {
+  text-shadow: 0px 0px 5px rgb(4, 0, 255), 0px 0px 12px rgb(0, 89, 255),
+    0px 0px 20px rgb(0, 89, 255), 0px 0px 30px rgb(0, 89, 255);
+}
+.google:hover {
+  text-shadow: 0px 0px 5px rgb(255, 0, 0), 0px 0px 12px rgb(212, 255, 0),
+    0px 0px 20px rgb(191, 0, 255), 0px 0px 30px rgb(0, 89, 255);
+}
+.insta:hover {
+  text-shadow: 0px 0px 5px rgb(191, 0, 255), 0px 0px 12px rgb(191, 0, 255),
+    0px 0px 20px rgb(191, 0, 255), 0px 0px 30px rgb(191, 0, 255);
+}
+.wp:hover {
+  text-shadow: 0px 0px 5px rgb(0, 255, 115), 0px 0px 12px rgb(4, 255, 0),
+    0px 0px 20px rgb(0, 255, 132), 0px 0px 30px rgb(0, 255, 17);
+}
+.linkdin:hover {
+  text-shadow: 0px 0px 5px rgb(4, 0, 255), 0px 0px 12px rgb(0, 89, 255),
+    0px 0px 20px rgb(0, 89, 255), 0px 0px 30px rgb(0, 89, 255);
+}
+.git:hover {
+  text-shadow: 0px 0px 5px white;
 }
 
 /* media */
