@@ -732,13 +732,19 @@ export default function Main() {
                 <i className="bi bi-whatsapp text-light mx-3 wp"></i>
               </div>
             </a>
+            <a
+              href="https://www.linkedin.com/in/ekansh-gupta-013133275"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <i
+                  className="fa fa-linkedin text-light mx-3 linkdin"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </a>
 
-            <div>
-              <i
-                className="fa fa-linkedin text-light mx-3 linkdin"
-                aria-hidden="true"
-              ></i>
-            </div>
             <a
               href="https://github.com/ekanshgupta981"
               target="_blank"
