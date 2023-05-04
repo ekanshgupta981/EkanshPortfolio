@@ -785,27 +785,16 @@ export default function Main() {
                 </div>
 
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Technology</h6>
+                  <h6 className="text-uppercase fw-bold mb-4">Region</h6>
                   <p>
-                    <a>MongodB</a>
-                  </p>
-                  <p>
-                    <a>Express Js</a>
-                  </p>
-                  <p>
-                    <a>React</a>
-                  </p>
-                  <p>
-                    <a>Node js</a>
+                    <i class="bi bi-globe-central-south-asia text-light me-2"></i>
+                    <a>India, Delhi</a>
                   </p>
                 </div>
 
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <h6 className="text-uppercase fw-bold mb-4 ">Contact</h6>
-                  <p>
-                    <i className="bi bi-geo-alt-fill me-3"></i>
-                    <span>India, Delhi</span>
-                  </p>
+
                   <a href="mailto:workwithekansh@gmail.com">
                     <p>
                       <i className="bi bi-envelope-at-fill me-3"></i>
@@ -818,9 +807,7 @@ export default function Main() {
                   <p>
                     <i className="bi bi-telephone-fill me-3"></i>
                     <span className="text-warning cursor-pointer">
-                      <a href="tel:+919650910557">
-                        Click to call me on +91 9650910557
-                      </a>
+                      <a href="tel:+919650910557">Call me on +91 9650910557</a>
                     </span>
                   </p>
 
@@ -832,7 +819,20 @@ export default function Main() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Click to contact me on whatsapp
+                        Contact me on Whatsapp
+                      </a>
+                    </span>
+                  </p>
+
+                  <p>
+                    <i class="bi bi-telegram  text-light me-3 "></i>
+                    <span className="text-warning cursor-pointer">
+                      <a
+                        href="https://t.me/ekanshGupta_1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Contact me on Telegram
                       </a>
                     </span>
                   </p>
